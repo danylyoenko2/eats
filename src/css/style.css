@@ -2,6 +2,8 @@
   --colorTextSecond: #737373;
   --colorTextLight: #ffffff;
   --colorTextMain: #252b42;
+  --colorTextDark: #000000;
+  --colorTextFooter: #5c5c5c;
   --colorBgMain: #f6f6f6;
   --colorBgButton: #ffffff00;
   --colorHover: #fa4a0c;
@@ -16,6 +18,13 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* =====================header=================== */
 
 .header {
   padding-top: 50px;
@@ -43,13 +52,17 @@ body {
 
 .list-item:hover {
   color: var(--colorHover);
+  transition: 0.1s ease-in;
 }
 
+/* ======================main=================== */
+
 .main-hero {
-  background-image: url(../img/bg/herobg.jpg);
+  background-image: url(../img/bg/herobg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 56px;
 }
 
 .suptitle {
@@ -61,6 +74,7 @@ body {
   line-height: 150%;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .main-title {
@@ -72,7 +86,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 .subtitle {
@@ -98,6 +112,7 @@ body {
 }
 
 .acction-button {
+  font-family: var(--fontFamily);
   color: var(--colorTextLight);
   padding: 16px 58.5px;
   font-weight: 700;
@@ -112,4 +127,154 @@ body {
 .acction-button:hover {
   box-shadow: 0 10px 30px 0 rgba(183, 50, 39, 0.2);
   background-color: var(--colorHover);
+  border: 1px solid var(--colorHover);
+  transition: 0.1s ease-in;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 191px;
+}
+
+.info:nth-last-child(1) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-info-title {
+  font-family: var(--secondFamily);
+  color: var(--colorTextDark);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 82%;
+  letter-spacing: 0em;
+  opacity: 0.8;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.info-block {
+  width: 568px;
+}
+
+.info-subtitle {
+  font-family: var(--fontFamily);
+  color: var(--colorHover);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  margin-bottom: 7px;
+}
+
+.info-title {
+  font-family: var(--fontFamily);
+  color: var(--colorTextMain);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.01em;
+  margin-bottom: 7px;
+}
+
+.info-text {
+  font-family: var(--fontFamily);
+  color: var(--colorTextSecond);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.01em;
+}
+
+.main-order {
+  background-image: url(../img/bg/footerbg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order-title {
+  font-family: var(--fontFamily);
+  color: var(--colorTextLight);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  padding-top: 131px;
+  margin-bottom: 10px;
+}
+
+.order-text {
+  font-family: var(--fontFamily);
+  color: var(--colorTextLight);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.order-acction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+.order-item {
+  padding-bottom: 130px;
+}
+
+.order-button {
+  font-family: var(--fontFamily);
+  color: var(--colorTextLight);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.01em;
+  border: 1px solid var(--colorTextLight);
+  border-radius: 10px;
+  padding: 18px 31px;
+  background-color: var(--colorBgButton);
+}
+
+.order-button:hover {
+  background-color: var(--colorHover);
+  border: 1px solid var(--colorHover);
+  transition: 0.1s ease-in;
+}
+/* ====================footer================= */
+
+.footer {
+  margin-top: 78px;
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1210px;
+  margin: 0 auto 27px auto;
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
+.footer-info {
+  font-family: var(--thirdFamily);
+  color: var(--colorTextFooter);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: right;
 }
