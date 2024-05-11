@@ -12,7 +12,7 @@
   --thirdFamily: "Roboto", sans-serif;
 }
 
-body {
+.container {
   max-width: 1370px;
   padding-left: 15px;
   padding-right: 15px;
