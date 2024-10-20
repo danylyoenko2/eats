@@ -193,3 +193,12 @@ img {
   padding-top: 115px;
   padding-bottom: 60px;
 }
+
+.footer-info {
+  font-family: var(--thirdFamily);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--colorTextFooter);
+}
